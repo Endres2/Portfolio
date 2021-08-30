@@ -1,0 +1,23 @@
+.About{
+    color: #c5c6c7;
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin-top:5%;
+        margin-bottom:5%;
+        
+    }
+    .row{
+        margin-top:15%;
+        margin-bottom:15%;
+        align-items: flex-start;
+        
+    }
+    
+    p{
+        font-size: 150%;
+    }
+}

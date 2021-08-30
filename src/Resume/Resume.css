@@ -1,0 +1,38 @@
+.Resume{
+    margin-top: 100px;
+    
+}
+.myBtn{
+    margin-bottom: 5%;
+    background-color: #66fcf1;
+    width: 30%;
+}
+.myBtn:hover{
+    background-color: rgb(39, 221, 130);
+}
+.skillTitle{
+    text-align: start;
+}
+ol{
+    padding-left: 0; 
+}
+ol li{
+    text-align: start;
+    list-style: none;
+    color: #c5c6c7;
+    font-size: 150%;
+    
+}
+@media screen and (max-width: 600px) {
+    ol li{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skillTitle{
+        text-align: center;
+    }
+    .lastCol{
+        margin-bottom: 50px;
+    }
+    
+}

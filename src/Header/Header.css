@@ -1,0 +1,118 @@
+
+.Header{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+  }
+
+.textName {
+    position: relative; 
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 100px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.text {
+    position: relative; 
+    margin-top: 5em;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 700;
+    color: #66fcf1;
+    text-shadow: 1px 1px 1px #45a29e,
+        1px 2px 1px #45a29e,
+        1px 3px 1px #45a29e,
+        1px 4px 1px #45a29e,
+        1px 5px 1px #45a29e,
+        1px 6px 1px #45a29e,
+        1px 7px 1px #45a29e,
+        1px 8px 1px #45a29e,
+        1px 9px 1px #45a29e,
+        1px 10px 1px #45a29e,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+#wrapper{
+    display:inline-flex;
+    }
+    .static{
+    color:#fff;
+    font-size:30px;
+    margin-right: 12px;
+
+    }
+    .dynamic{
+    height:45px;
+    line-height:45px;
+    overflow:hidden;
+    margin:-3.5px -28px;
+    }
+    ul li{
+    list-style: none;
+    position:relative;
+    list-style:none;
+    color:rgb(39, 221, 130);
+    font-size: 30px;
+    animation:slide 12s steps(4)
+    infinite;
+    top:0;
+    }
+    ul li span{
+    position:relative;
+    }
+    ul li span::after{
+    list-style: none;
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 100%;
+    left:0;
+    border-left: 11px solid rgb(39, 221, 130,.75);
+    animation:type 3s steps(8) infinite, spark 600ms steps(88) infinite ;
+    background:#0b0c10;
+    top:2%;
+    }
+   
+    @keyframes type{
+        
+    50%{
+    left:100%;
+    margin:0 -35px 0 35px;
+    }
+    
+    
+    }
+    @keyframes slide {
+
+    100% {
+    top: -174px;
+    
+    }
+    }
+    @keyframes spark {
+    from{border-left-color: rgba(39, 221, 130,.75);}
+    to{border-left-color: transparent;}
+    }

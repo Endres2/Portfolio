@@ -1,0 +1,12 @@
+.navBar{
+    position: fixed;
+    top: 0;
+    background-color: #1f2833;
+    width: 100%;
+    z-index: 1;
+    padding-left: 2%;
+  }
+
+  
+
+
