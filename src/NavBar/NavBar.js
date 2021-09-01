@@ -8,9 +8,9 @@ function NavBar() {
     return (
         <div className="NavBar " >
             <Navbar   collapseOnSelect expand="lg" variant="dark">
-                <Navbar.Brand.Link as={Link} to="/">
+                <Navbar.Brand>
                     Portfolio
-                </Navbar.Brand.Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto"  >

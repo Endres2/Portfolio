@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Header from './Header/Header';
 import NavBar from './NavBar/NavBar';
 import About from './About/About';
@@ -17,6 +17,7 @@ function App() {
         <div className="navBar">
           <NavBar />
         </div>
+        <Switch>
         <div className="flex-column justify-flex-start min-100-vh">
           <div className="container">
             <Route exact path="/">
@@ -34,9 +35,11 @@ function App() {
             <Route exact path="/resume">
               <Resume />
             </Route>
+            <Redirect to={`/`} />
           </div>
           <Footer />
         </div>
+        </Switch>
       </Router>
 
 

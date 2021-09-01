@@ -116,3 +116,9 @@
     from{border-left-color: rgba(39, 221, 130,.75);}
     to{border-left-color: transparent;}
     }
+
+    @media screen and (max-width:600px) {
+        .text{
+            top:40%;
+        }
+    }
